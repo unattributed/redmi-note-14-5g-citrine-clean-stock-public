@@ -1,0 +1,52 @@
+extracted/stage1
+└── beryl_dc_global_images_OS3.0.1.0.WOQMIDC_16.0
+    ├── CheckSum_Generator
+    ├── check_sum.sh
+    ├── flash_all.bat
+    ├── flash_all_except_storage.bat
+    ├── flash_all_except_storage.sh
+    ├── flash_all_lock.bat
+    ├── flash_all_lock.sh
+    ├── flash_all.sh
+    ├── flash_gen_crc_list.py
+    ├── flash_gen_md5_list.py
+    ├── images
+    │   ├── anti_version.txt
+    │   ├── auth_sv5.auth
+    │   ├── boot.img
+    │   ├── countrycode.img
+    │   ├── crclist.txt
+    │   ├── download_agent
+    │   ├── dpm.img
+    │   ├── dtbo.img
+    │   ├── efuse.img
+    │   ├── gpueb.img
+    │   ├── gz.img
+    │   ├── init_boot.img
+    │   ├── lk.img
+    │   ├── logo.bin
+    │   ├── mcupm.img
+    │   ├── md1img.img
+    │   ├── MT6855_Android_scatter.txt
+    │   ├── MT6855_Android_scatter.xml
+    │   ├── pi_img.img
+    │   ├── preloader_beryl.bin
+    │   ├── rescue.img
+    │   ├── scatter_checksum.xml
+    │   ├── scp.img
+    │   ├── sparsecrclist.txt
+    │   ├── spmfw.img
+    │   ├── sspm.img
+    │   ├── super.img
+    │   ├── tee.img
+    │   ├── userdata.img
+    │   ├── vbmeta.img
+    │   ├── vbmeta_system.img
+    │   ├── vbmeta_vendor.img
+    │   ├── vcp.img
+    │   └── vendor_boot.img
+    ├── libflash.1.0.0.so
+    ├── libimagechecker.1.0.0.so
+    └── misc.txt
+
+4 directories, 46 files

@@ -1,0 +1,92 @@
+# android-rom-dev ignore policy
+
+# device identifiers and live phone recon
+device-recon/
+**/getprop.txt
+**/fastboot-all.txt
+**/by-name.txt
+**/cpuinfo.txt
+**/df.txt
+**/fingerprint.txt
+**/flash-locked.txt
+**/hardware.txt
+**/product-board.txt
+**/product-device.txt
+**/security-patch.txt
+**/uname.txt
+**/vbmeta-state.txt
+**/verifiedbootstate.txt
+
+# firmware archives and extracted stock images
+firmware/**/downloads/
+firmware/**/extracted/
+firmware/**/super-analysis/raw/
+firmware/**/super-analysis/metadata-scan/
+firmware/**/*.img
+firmware/**/*.bin
+firmware/**/*.auth
+firmware/**/*.tgz
+firmware/**/*.tar
+firmware/**/*.tar.gz
+firmware/**/*.zip
+firmware/**/*.7z
+firmware/**/*.xz
+firmware/**/*.lz4
+firmware/**/*.br
+
+# generated evidence and analysis bundles
+android-rom-dev-evidence/
+evidence/
+*.tar.gz
+*.tgz
+*.zip
+
+# android source trees and large external source checkouts
+aosp/
+lineage/
+kernels/
+out/
+.repo/
+ccache/
+.cache/
+
+# extracted logical partition images
+**/super.raw.img
+**/system_a.img
+**/system_ext_a.img
+**/product_a.img
+**/vendor_a.img
+**/vendor_dlkm_a.img
+**/system_dlkm_a.img
+**/odm_dlkm_a.img
+**/mi_ext_a.img
+
+# python virtual environments and caches
+tools/payload-dumper-venv/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# editor and local workstation files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# temporary logs and generated scan outputs
+logs/
+*.log
+*.tmp
+*.bak
+
+# allow curated private evidence bundles in the repository
+!evidence/
+!evidence/bundles/
+!evidence/bundles/*.tar.gz
+!evidence/manifests/
+!evidence/manifests/*.md

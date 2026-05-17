@@ -1,0 +1,59 @@
+android rom development project state
+last-updated: 2026-05-17, after clean-stock Step 51
+
+device: Redmi Note 14 5G
+codename: citrine
+platform: MediaTek MT6855
+android: 16
+hyperos: OS3.0.1.0.WOQMIDC
+bootloader: locked
+verified boot: green
+vbmeta state: locked
+secure boot: yes
+anti rollback: 1
+slot count: 2
+current slot observed earlier: b
+dynamic partitions: yes
+super partition: yes
+
+current track status:
+  track 1, factory rollback:
+    partial proof only
+    not end-to-end reflash proven
+    do not rely on hard-brick recovery being available
+
+  track 2, custom rom:
+    blocked
+    insufficient public functional and release-integrity evidence
+    bootloader unlock remains no-go
+
+  track 3, clean stock:
+    milestone 1 reached
+    stock HyperOS retained
+    bootloader remains locked
+    optional OEM launcher-visible apps removed or disabled for Android user 0
+    com.miui.securitycenter intentionally retained
+    Google Phone, Google Messages, and Chrome validated as default handlers
+    Google app recorded as assistant role holder
+    MIUI Home retained for stability
+    post-reboot normal phone function validation completed
+    restore script committed
+
+current operating rule:
+  do not flash
+  do not unlock bootloader
+  do not downgrade
+  do not erase userdata
+  do not install DSU
+  do not sideload Google applications
+  do not run Xiaomi flash scripts
+  do not relock
+  do not continue broad package cleanup
+  only change packages when a specific observed issue is tied to a package
+
+restore tooling:
+  scripts/restore-clean-stock-milestone1-user0.sh --dry-run
+  scripts/restore-clean-stock-milestone1-user0.sh --execute
+
+inventory tooling:
+  scripts/step43-adb-visible-launcher-inventory.sh

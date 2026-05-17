@@ -1,0 +1,24 @@
+Firmware acquisition objectives
+
+Device:
+- Redmi Note 14 5G
+- codename: citrine
+- region: global
+- build: OS3.0.1.0.WOQMIDC
+- android: 16
+
+Requirements:
+- official Xiaomi firmware only
+- prefer fastboot firmware tgz package
+- obtain recovery rom zip if fastboot unavailable
+- preserve original checksums
+- do not flash
+- extraction and analysis only
+
+Goals:
+- recoverability
+- partition extraction
+- payload.bin extraction
+- vbmeta analysis
+- super partition analysis
+- rollback capability
